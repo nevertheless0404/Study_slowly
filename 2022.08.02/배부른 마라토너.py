@@ -16,7 +16,7 @@ for _ in range(n):
     
 for _ in range(n-1):
     name = input()
-    names[name] =-1    # 완주한 사람의 이름을 넣어주고 빼준다.
+    names[name] -=1   # 완주한 사람의 이름을 넣어주고 빼준다.
 
 for key in names:
     if names[key] > 0:    # 값에 0 그러니까 존재하지 않는 값을 찾는다.
