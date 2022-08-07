@@ -23,7 +23,7 @@ arr = []
 for book, number in books.items():
     if number == target:
         arr.append(book)
-print(book)
+# 정렬한 값을 반환(맨 앞에 있는거)
 print(sorted(arr)[0])
 
     
