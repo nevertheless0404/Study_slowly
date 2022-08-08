@@ -29,11 +29,14 @@ for i in range(n):
                 if 0 <= searxh_i <= n-1 and 0<= search_j <= n-1:
                     if game_board[searxh_i][search_j] == '*':
                         cnt += 1
+            # 지뢰수 넣기 
             tmp.append(str(cnt))
         else:
+            # '.'이라면 결과에 넣기!
             tmp.append('.')
     result.append(tmp)
 
+# 지뢰를 발견했으면 지뢰 위치를 결과보드의 표시 
 if bomb_find:
    for i in range(n):
         for j in range(n):
