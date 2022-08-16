@@ -26,7 +26,7 @@ for i in range(6):
     result.append(max(tmp))
     for j in range(1, num_dice):
         tmp = [1, 2, 3, 4, 5, 6]
-        tmp.append(next)
+        tmp.remove(next)
         # 현재 주사위 윗면 계산 
         next = dice[j][route[dice[j].index(next)]]
         tmp.remove(next)
