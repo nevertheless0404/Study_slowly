@@ -34,8 +34,9 @@ for i in range(len(list_c) -1):   # 0 1
 for j in range(len(list_r) -1):  # 0 1 2
     # list_r[1]-list_r[0] list_r[2]-list_[1] list_r[3]-list[2]
     result_r.append(list_r[j+1]-list_r[j])
+    print(result_r)
 
-print(max(result_r) * max(result_c))
+# print(max(result_r) * max(result_c))
 
         
         
