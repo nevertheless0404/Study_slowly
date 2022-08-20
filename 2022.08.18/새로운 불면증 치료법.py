@@ -12,6 +12,7 @@ for tc in range(int(input())):
     n = int(input())
     # 중복이 허용되지 않음 
     coll = set()
+    # 배열에 숫자가 나올때 마다 1로 체크
     cnt = 1
 
     while True:
@@ -23,6 +24,6 @@ for tc in range(int(input())):
             break
         n //= cnt
         cnt += 1
+        # 센 양의 수 
         n *= cnt
-        print(cnt)
-    # print('#{} {}'.format(tc+1,n))
+    print('#{} {}'.format(tc+1,n))

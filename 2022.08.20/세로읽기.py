@@ -14,9 +14,10 @@ for _ in range(5):
     print(length)
 
 result = ''
+# 단어 길이가 제일 긴만큼 반복
 for i in range(max(length)):
-    print(i)
-#     for j in range(5):
-#         if i < length[j]:
-#             result += words[j][i]
-# print(result)
+    # 단어의 수인 5만큼 만복
+    for j in range(5):
+        if i < length[j]:
+            result += words[j][i]
+print(result)
