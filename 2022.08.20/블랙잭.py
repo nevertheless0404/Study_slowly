@@ -13,6 +13,6 @@ for i in range(n):
             if card[i] + card[j] + card[k] > m:
                 continue
             else: 
-                result = max(result, card[i] + card[j] + card[k])
+                result = max(result, card[i] + card[j] + card[k]) 
 
 print(result)
