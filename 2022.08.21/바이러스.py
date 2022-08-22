@@ -24,10 +24,11 @@ def dfs(start):
 
     while stack:
         cur = stack.pop()
-
+        if not visited[cur]:
+            visited[cur] = True
+        
         for adj in graph[cur]:
             if not visited[adj]:
-                visited[adj] = True 
                 stack.append(adj)
 # 1번 정점에서 시작
 dfs(1)

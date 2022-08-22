@@ -18,7 +18,7 @@ for tc in range(int(input())):
     while True:
         # 중복을 허용하지 않고 문자형태로 
         # 넣어주고, 10개가 되면 나온다.
-        for num in list(str(n)):
+        for num in str(n):
             coll.add(num)
         if len(coll) == 10:
             break
