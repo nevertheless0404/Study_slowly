@@ -5,18 +5,20 @@ sys.stdin = open ("/Users/yuyeong/Desktop/1일 1코딩/2022.08.24
 
 t = int(input())
 
-for tc in range(1, t+1):
+for tc in range(1, t + 1) :
     n = int(input())
-    board=[[0] * n for _ in range(n)]
-    for i in range(n):
+    board = [[0] * n for _ in range(n)]
+    for i in range(n) :
         board[i][0] = 1
 
-    for i in range(1, n):
-        for j in range(1, n):
+    for i in range(1, n) :
+        for j in range(1, n) :
+            # 1번째 행, 1번째 열부터 해당 인덱스의 값을 왼쪽 대각선 위
             board[i][j] = board[i-1][j-1] + board[i-1][j]
+
     print('#%d' % tc)
-    for i in range(n):
-        for j in range(n):
-            if board[i][j] != 0:
-                print(board[i][j], end = '')
+    for i in range(n) :
+        for j in range(n) :
+            if board[i][j] != 0 :
+                print(board[i][j], end=' ')
         print()
