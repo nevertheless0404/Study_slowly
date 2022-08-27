@@ -16,7 +16,7 @@ for tc in range(1, t+1):
         # 최대 기동 가능한 거리내에 충전소가 있는지 확인
         for i in range(k, 0, -1):
             if(loc + i) in num_b:
-                # 충전소가 있을 경우 증가 
+                # 충전소가 있을 경우 현재 위치에 더해 줌 
                 loc += i
                 # 충전 횟수 증가
                 char += 1
